@@ -1,0 +1,37 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Numbers and Current Date</title>
+</head>
+<body>
+
+    <h1>Random Numbers and Current Date</h1>
+    <p id="date"></p>
+    <ul id="random-numbers"></ul>
+
+    <script>
+        function printRandomNumbers() {
+            
+            let currentDate = new Date();
+            document.getElementById("date").textContent = "Current Date: " + currentDate;
+
+    
+            for (let i = 0; i < 4; i++) {
+                
+                let randomNum = Math.random() 
+
+            
+                let listItem = document.createElement("li");
+                listItem.textContent = "Random Number: " + roundedRandomNum;
+                document.getElementById("random-numbers").innerHTML = (listItem);
+            }
+        }
+
+        
+        printRandomNumbers();
+    </script>
+
+</body>
+</html>
